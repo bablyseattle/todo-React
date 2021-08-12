@@ -4,7 +4,6 @@ const Todo = ({ todo, toggleComplete, removeTodo }) => {
 
   const [isEditing, setIsEditing] = useState(false);
   const [currentTodo, setCurrentTodo] = useState(todo);
-  console.log(todo.completed);
 
 
   const handleCheckboxClick = () => {
@@ -29,7 +28,7 @@ const Todo = ({ todo, toggleComplete, removeTodo }) => {
 
   return (
     <div style={{ display: "flex" }}>
-      <input type="checkbox" checked={todo.completed} onClick={handleCheckboxClick}
+      <input type="checkbox" defaultChecked={todo.completed} onClick={handleCheckboxClick}
       />
       {
         isEditing ? (
