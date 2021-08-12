@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Todo = ({ todo, toggleComplete }) => {
+const Todo = ({ todo, toggleComplete, removeTodo }) => {
   const handleCheckboxClick = () => {
     toggleComplete(todo.id);
+  }
+  const handleButtonClick = () => {
+    removeTodo(todo.id)
   }
 
   return (
@@ -14,7 +17,7 @@ const Todo = ({ todo, toggleComplete }) => {
 
       />
       <li>{todo.task}</li>
-      <button>X</button>
+      <button onClick={handleButtonClick}>X</button>
 
     </div>
   )
