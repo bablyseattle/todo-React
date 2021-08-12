@@ -1,0 +1,3 @@
+ style={{
+        textDecoration: todo.completed ? "line-through" : null
+      }} 

@@ -11,12 +11,10 @@ const Todo = ({ todo, toggleComplete, removeTodo }) => {
   return (
     <div style={{ display: "flex" }}>
       <input type="checkbox" onClick={handleCheckboxClick}
-        style={{
-          textDecoration: todo.completed ? "line-through" : null
-        }}
-
       />
-      <li>{todo.task}</li>
+      <li style={{
+        textDecoration: todo.completed ? "line-through" : null
+      }} >{todo.task}</li>
       <button onClick={handleButtonClick}>X</button>
 
     </div>
