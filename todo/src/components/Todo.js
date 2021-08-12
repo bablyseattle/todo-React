@@ -35,13 +35,13 @@ const Todo = ({ todo, toggleComplete, removeTodo }) => {
           <div>
             <input
               type="text" onChange={handleEditInputChange} />
-            <button type="submit" onClick={handleUpdateClick}>Update</button>
+            <button className="button" type="submit" onClick={handleUpdateClick}>Update</button>
           </div>
 
         )
 
           :
-          <li
+          <li className="checkboxtext"
             style={{
               textDecoration: todo.completed ? "line-through" : null
             }}
@@ -49,9 +49,9 @@ const Todo = ({ todo, toggleComplete, removeTodo }) => {
 
       }
 
-      <button onClick={handleButtonClick}>X</button>
+      <button className="button" onClick={handleButtonClick}>X</button>
 
-      <button disabled={todo.completed} onClick={() => handleEditClick()}>
+      <button className="button" disabled={todo.completed} onClick={() => handleEditClick()}>
         Edit
       </button>
 

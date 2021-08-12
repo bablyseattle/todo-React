@@ -8,7 +8,7 @@ const TodoList = ({ todos, toggleComplete, removeTodo }) => {
   );
   return (
     < div >
-      <ul>
+      <ul className="list">
         {todoList}
       </ul>
 

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #d1749f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+li {
+  list-style: none;
+}
+
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+.checkboxtext
+{
+  /* Checkbox text */
+  font-size: 110%;
+  display: inline;
+}
+
+button {
+  border: 1px solid #0066cc;
+  background-color: #0099cc;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #3a3636;
+  color: #666666;
+  padding: 5px 10px;
+}
+
